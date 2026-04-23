@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(where claude:*)",
+      "Read(//c/Users/scmej/.antigravity/**)",
+      "Read(//c/Users/scmej/.antigravity/extensions//**)",
+      "Bash(\"/c/Users/scmej/AppData/Local/Programs/Antigravity/bin/antigravity\" --version)",
+      "Bash(\"/c/Users/scmej/AppData/Local/Programs/Antigravity/bin/antigravity\" --help)",
+      "Read(//c/Users/scmej/.gemini/antigravity/playground/**)",
+      "Bash(npm create:*)",
+      "Bash(npx vite:*)"
+    ]
+  }
+}
