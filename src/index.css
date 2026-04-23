@@ -548,7 +548,7 @@ h4, h5, h6 {
 
   /* ModulesExperience Mobile Fixes */
   .experience-wrap {
-    overflow: hidden;
+    overflow: visible;
   }
   
   .method-box {
