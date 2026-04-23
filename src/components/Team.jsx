@@ -286,16 +286,20 @@ const Team = () => {
 
         .member-modal-photo {
           position: relative;
-          background-size: cover;
-          background-position: center 20%;
-          min-height: 500px;
+          background: radial-gradient(circle at 50% 40%, #1a1a1a 0%, #050505 100%);
+          min-height: 600px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
         }
 
-        .member-modal-photo::after {
-          content: '';
-          position: absolute;
-          inset: 0;
-          background: linear-gradient(to right, transparent 70%, rgba(10, 10, 10, 0.6) 100%);
+        .member-modal-img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          display: block;
+          padding: 1.5rem;
         }
 
         .member-modal-number {
@@ -431,11 +435,11 @@ const Team = () => {
             max-height: 92vh;
           }
           .member-modal-photo {
-            min-height: 320px;
-            aspect-ratio: 16/10;
+            min-height: 420px;
+            aspect-ratio: auto;
           }
-          .member-modal-photo::after {
-            background: linear-gradient(to bottom, transparent 60%, rgba(10, 10, 10, 0.8) 100%);
+          .member-modal-img {
+            padding: 1rem;
           }
           .member-modal-body {
             padding: 2.5rem 2rem;
@@ -456,7 +460,8 @@ const Team = () => {
           .member-modal-overlay { padding: 0; }
           .member-modal { max-height: 100vh; height: 100vh; border-radius: 0; }
           .member-modal-body { padding: 2rem 1.5rem; }
-          .member-modal-photo { min-height: 280px; }
+          .member-modal-photo { min-height: 380px; }
+          .member-modal-img { padding: 0.75rem; }
           .member-modal-name { font-size: 2rem; }
         }
       `}</style>
@@ -527,10 +532,13 @@ const Team = () => {
               ×
             </button>
 
-            <div
-              className="member-modal-photo"
-              style={{ backgroundImage: `url(${activeMember.photo})` }}
-            >
+            <div className="member-modal-photo">
+              <img
+                className="member-modal-img"
+                src={activeMember.photo}
+                alt={activeMember.name}
+                loading="lazy"
+              />
               <span className="member-modal-number">N° {activeMember.id}</span>
             </div>
 
