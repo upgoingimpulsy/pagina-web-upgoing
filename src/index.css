@@ -481,12 +481,12 @@ h4, h5, h6 {
 
   /* Team Section Mobile */
   .team-grid-v6 {
-    grid-template-columns: 1fr !important;
-    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem;
   }
   
   .team-photo-v6 {
-    height: 400px !important;
+    height: 250px !important;
   }
   
   .title-v5 {
