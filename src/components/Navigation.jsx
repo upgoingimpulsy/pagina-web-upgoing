@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { List, X } from '@phosphor-icons/react';
 
 const Navigation = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
   const isHome = location.pathname === '/';
 
   const scrollToSection = (e, id) => {
+    setIsMenuOpen(false); // Close menu on click
     if (isHome) {
       e.preventDefault();
       const element = document.getElementById(id);
@@ -18,10 +21,19 @@ const Navigation = () => {
   return (
     <nav className="nav">
       <div className="container nav-container">
-        <Link to="/" className="logo-container">
+        <Link to="/" className="logo-container" onClick={() => setIsMenuOpen(false)}>
           <img src="/upgoing.png" alt="Up Going" />
         </Link>
-        <div className="nav-links">
+
+        <button 
+          className="mobile-menu-btn" 
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          {isMenuOpen ? <X size={32} weight="bold" /> : <List size={32} weight="bold" />}
+        </button>
+
+        <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
           {isHome ? (
             <a href="#inicio" className="nav-item" onClick={(e) => scrollToSection(e, 'inicio')}>Inicio</a>
           ) : (

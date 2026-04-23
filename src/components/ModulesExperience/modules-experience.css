@@ -23,6 +23,12 @@
   height: 150vh;
 }
 
+@media (max-width: 768px) {
+  .stage {
+    height: 300vh;
+  }
+}
+
 .stage-pin {
   position: sticky;
   top: 0;

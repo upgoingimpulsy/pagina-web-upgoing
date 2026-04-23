@@ -9,6 +9,32 @@ const getVideoType = (url) => {
 
 const ServicesSlider = ({ services, activeVideo, setActiveVideo }) => {
   const [activeCard, setActiveCard] = useState(1);
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
+
+  const minSwipeDistance = 50;
+
+  const onTouchStart = (e) => {
+    setTouchEnd(null);
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const onTouchMove = (e) => setTouchEnd(e.targetTouches[0].clientX);
+
+  const onTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
+    
+    if (isLeftSwipe) {
+      const nextIndex = (activeCard + 1) % services.length;
+      setActiveCard(nextIndex);
+    } else if (isRightSwipe) {
+      const prevIndex = (activeCard - 1 + services.length) % services.length;
+      setActiveCard(prevIndex);
+    }
+  };
 
   const handleCardClick = (index) => {
     if (index === activeCard) {
@@ -17,6 +43,7 @@ const ServicesSlider = ({ services, activeVideo, setActiveVideo }) => {
       setActiveCard(index);
     }
   };
+
 
   return (
     <section className="services-rotation-module">
@@ -175,7 +202,12 @@ const ServicesSlider = ({ services, activeVideo, setActiveVideo }) => {
           <h2>Modelos de <br/> <span style={{ color: '#ffd200' }}>Inversión</span></h2>
         </div>
 
-        <div className="rotation-container reveal">
+        <div 
+          className="rotation-container reveal"
+          onTouchStart={onTouchStart}
+          onTouchMove={onTouchMove}
+          onTouchEnd={onTouchEnd}
+        >
           {services.map((s, i) => {
             let state = "hidden";
             if (i === activeCard) state = "active";
