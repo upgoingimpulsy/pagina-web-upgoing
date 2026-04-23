@@ -247,6 +247,22 @@ h4, h5, h6 {
   transition: var(--transition);
 }
 
+.service-content h3 {
+  font-family: var(--font-body-premium);
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.service-content p {
+  font-family: var(--font-body-clean);
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
 .service-card-v6:hover .features-list-v6,
 .service-card-v6.active .features-list-v6 {
   opacity: 1;
