@@ -159,10 +159,13 @@ const ServicesSlider = ({ services, activeVideo, setActiveVideo }) => {
         }
 
         @media (max-width: 768px) {
-          .rotation-card { width: 280px; height: 400px; }
-          .rotation-container { height: 450px; }
-          .rotation-card.prev { transform: translateX(-50%) rotateY(35deg) translateZ(-200px) scale(0.8); }
-          .rotation-card.next { transform: translateX(50%) rotateY(-35deg) translateZ(-200px) scale(0.8); }
+          .rotation-card { width: 260px; height: 380px; }
+          .rotation-container { height: 400px; }
+          .rotation-card.prev { transform: translateX(-40%) rotateY(35deg) translateZ(-200px) scale(0.75); }
+          .rotation-card.next { transform: translateX(40%) rotateY(-35deg) translateZ(-200px) scale(0.75); }
+          .card-title { font-size: 1.5rem; }
+          .card-overlay { padding: 1.5rem; }
+          .slider-title-center { margin-bottom: 40px; }
         }
       `}</style>
 

@@ -93,6 +93,12 @@ h4, h5, h6 {
   padding: 0 4rem;
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
 /* Active Card Slider V6 - Dedicated Section Styling */
 .services-v6-wrapper {
   padding: 12rem 0;
@@ -353,5 +359,72 @@ h4, h5, h6 {
 
   .service-card-v6 {
     flex: 0 0 320px;
+  }
+}
+
+/* Navigation Desktop Base - Matching original styles */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.logo-container img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .nav-container {
+    justify-content: space-between;
+  }
+  
+  .nav-cta {
+    display: block !important;
+  }
+
+  .nav {
+    height: 80px;
+    background: rgba(2, 8, 23, 0.9);
+  }
+
+  .brutal-title {
+    font-size: 2.8rem;
+    line-height: 1;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-p-v6 {
+    font-size: 1rem !important;
+    width: 100% !important;
+  }
+  
+  .hero-actions-v6 {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .hero-actions-v6 .btn-yellow,
+  .hero-actions-v6 .btn-outline-v6 {
+    width: 100%;
+    text-align: center;
   }
 }

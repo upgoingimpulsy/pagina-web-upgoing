@@ -17,11 +17,11 @@ const Navigation = () => {
 
   return (
     <nav className="nav">
-      <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '100%' }}>
-        <Link to="/" className="logo-container" style={{ display: 'flex', alignItems: 'center', height: '40px' }}>
-          <img src="/upgoing.png" alt="Up Going" style={{ height: '100%', width: 'auto', objectFit: 'contain' }} />
+      <div className="container nav-container">
+        <Link to="/" className="logo-container">
+          <img src="/upgoing.png" alt="Up Going" />
         </Link>
-        <div className="nav-links" style={{ display: 'flex', gap: '3rem', alignItems: 'center' }}>
+        <div className="nav-links">
           {isHome ? (
             <a href="#inicio" className="nav-item" onClick={(e) => scrollToSection(e, 'inicio')}>Inicio</a>
           ) : (
@@ -42,7 +42,7 @@ const Navigation = () => {
             <Link to="/#nosotros" className="nav-item">Nosotros</Link>
           )}
 
-          <a href="#contacto" className="btn-yellow" style={{ padding: '0.8rem 1.5rem', fontSize: '0.75rem' }}>AGENDAR SESIÓN</a>
+          <a href="#contacto" className="btn-yellow nav-cta">AGENDAR SESIÓN</a>
         </div>
       </div>
     </nav>

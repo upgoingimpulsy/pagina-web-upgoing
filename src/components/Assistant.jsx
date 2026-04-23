@@ -325,6 +325,15 @@ const Assistant = () => {
         .close-x, .close-popup { background: transparent; border: none; color: white; cursor: pointer; }
         .close-popup { position: absolute; top: 1rem; right: 1rem; font-size: 1.5rem; opacity: 0.5; }
         .close-popup:hover { opacity: 1; }
+        @media (max-width: 768px) {
+          .assistant-wrapper { bottom: 1.5rem; right: 1.5rem; }
+          .trigger-pill { padding: 0.8rem 1.2rem; gap: 0.8rem; }
+          .trigger-text { font-size: 0.7rem; }
+          .chat-window-v5 { width: calc(100vw - 3rem); height: calc(100vh - 100px); bottom: 0; right: 0; }
+          .welcome-popup-center { width: calc(100vw - 3rem); padding: 2rem; }
+          .welcome-popup-center h3 { font-size: 1.2rem; }
+          .welcome-popup-center p { font-size: 0.9rem; }
+        }
         @keyframes blink { from { opacity: 0.3; } to { opacity: 1; } }
       `}</style>
     </div>

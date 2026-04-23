@@ -459,6 +459,60 @@
           @media (max-width: 768px) {
             .progress-rail { right: 1rem; }
             .rail-dot span { display: none; }
+
+            /* Hero V6 Mobile Refinement */
+            .hero-v6 {
+              height: auto;
+              min-height: 100vh;
+              align-items: flex-start;
+              padding: 120px 0 60px;
+            }
+
+            .felipe-layer-v6 {
+              width: 100%;
+              height: 50vh;
+              top: 0;
+              bottom: auto;
+              mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+              opacity: 0.8;
+            }
+
+            .hero-content-v6 {
+              max-width: 100%;
+              text-align: center;
+              padding: 0 20px;
+              margin-top: 35vh; /* Empujar texto para no tapar el video totalmente */
+            }
+
+            .brutal-title {
+              font-size: 2.5rem;
+              letter-spacing: -0.02em;
+            }
+
+            .hero-p-v6 {
+              font-size: 1.1rem;
+              line-height: 1.6;
+              margin-bottom: 3rem;
+            }
+
+            .hero-actions-v6 {
+              flex-direction: column;
+              gap: 1.5rem;
+            }
+
+            .btn-yellow {
+              width: 100%;
+              padding: 1.2rem;
+            }
+
+            .btn-outline-v6 {
+              width: fit-content;
+              margin: 0 auto;
+            }
+
+            .hud-frame { inset: 15px; }
+            .hud-coords { display: none; }
+            .brutal-brand-bg { opacity: 0.1; transform: translate(-50%, -50%) rotate(-5deg) scale(0.5); }
           }
 
           @media (prefers-reduced-motion: reduce) {

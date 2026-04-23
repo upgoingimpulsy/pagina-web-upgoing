@@ -261,7 +261,10 @@ const ServicesPage = () => {
           .detail-grid { grid-template-columns: 1fr; gap: 4rem; }
           .detail-grid.reverse { direction: ltr; }
           .detail-text { max-width: 100%; order: 2; }
-          .detail-visual { order: 1; }
+          .detail-visual { order: 1; margin-bottom: 2rem; }
+          .feature-bullets { grid-template-columns: 1fr; }
+          .services-hero-section { padding: 120px 0 60px; }
+          .price-tag-v6 span[style*="font-size: 2.5rem"] { font-size: 1.8rem !important; }
         }
       `}</style>
 
