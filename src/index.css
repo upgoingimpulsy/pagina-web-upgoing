@@ -427,4 +427,144 @@ h4, h5, h6 {
     width: 100%;
     text-align: center;
   }
+
+  /* Strategy Section Mobile */
+  .strategy-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+  }
+  
+  .strategy-card {
+    padding: 2rem !important;
+  }
+  
+  .strategy-card h2 {
+    font-size: 1.5rem !important;
+  }
+
+  /* Team Section Mobile */
+  .team-grid-v6 {
+    grid-template-columns: 1fr !important;
+    gap: 2rem;
+  }
+  
+  .team-photo-v6 {
+    height: 400px !important;
+  }
+  
+  .title-v5 {
+    font-size: 2.2rem !important;
+    line-height: 1.1;
+  }
+
+  /* Allies Section Mobile */
+  .allies-layout {
+    grid-template-columns: 1fr !important;
+    gap: 3rem;
+  }
+  
+  .allies-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem;
+  }
+  
+  .flip-card {
+    height: 140px !important;
+  }
+
+  /* Footer Mobile */
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 3rem;
+    text-align: center;
+  }
+  
+  .footer-brand-v6 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-nav-group {
+    grid-template-columns: 1fr !important;
+    gap: 2rem;
+  }
+  
+  .footer-socials {
+    justify-content: center;
+  }
+
+  /* Global Containers Mobile */
+  .container {
+    padding: 0 1.5rem !important;
+  }
+  
+  section {
+    padding: 4rem 0 !important;
+  }
+
+  /* ModulesExperience Mobile Fixes */
+  .experience-wrap {
+    overflow: hidden;
+  }
+  
+  .method-box {
+    width: 90% !important;
+    padding: 1.5rem !important;
+    margin: 0 auto !important;
+  }
+  
+  .method-title {
+    font-size: 1.6rem !important;
+  }
+  
+  .method-desc {
+    font-size: 0.9rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .steps-row {
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100%;
+  }
+  
+  .step-item {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  /* Diagnostic Mobile Fixes */
+  .diag-card {
+    padding: 2rem !important;
+    width: 95% !important;
+    margin: 0 auto !important;
+  }
+  
+  .diag-input-large {
+    font-size: 2rem !important;
+  }
+  
+  .input-prefix {
+    font-size: 2rem !important;
+  }
+  
+  .results-grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .diag-actions {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .diag-actions button {
+    width: 100%;
+  }
+
+  /* General Fixes */
+  body {
+    overflow-x: hidden !important;
+    width: 100%;
+  }
 }
