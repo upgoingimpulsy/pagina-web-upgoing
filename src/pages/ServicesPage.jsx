@@ -84,7 +84,7 @@ const ServicesPage = () => {
         .services-hero-section {
           padding: 180px 0 100px;
           text-align: center;
-          background: radial-gradient(circle at 50% 0%, rgba(255, 210, 0, 0.1), transparent 70%);
+          background: radial-gradient(circle at 50% 0%, rgba(247, 229, 157, 0.1), transparent 70%);
         }
 
         .services-hero-section .brutal-title {
@@ -120,7 +120,7 @@ const ServicesPage = () => {
         .service-num {
           font-size: 0.8rem;
           font-weight: 900;
-          color: #ffd200;
+          color: #F7E59D;
           letter-spacing: 0.4em;
           margin-bottom: 1.5rem;
           display: block;
@@ -165,7 +165,7 @@ const ServicesPage = () => {
           content: '';
           width: 6px;
           height: 6px;
-          background: #ffd200;
+          background: #F7E59D;
           border-radius: 50%;
         }
 
@@ -214,7 +214,7 @@ const ServicesPage = () => {
         .play-btn {
           width: 80px;
           height: 80px;
-          background: #ffd200;
+          background: #F7E59D;
           border-radius: 50%;
           display: flex;
           align-items: center;
@@ -258,8 +258,8 @@ const ServicesPage = () => {
             fontSize: '0.7rem',
             fontWeight: 900,
             letterSpacing: '0.3em',
-            color: '#ffd200',
-            border: '1px solid rgba(255,210,0,0.3)',
+            color: '#F7E59D',
+            border: '1px solid rgba(247,229,157,0.3)',
             padding: '0.5rem 1rem',
             display: 'inline-block',
             marginBottom: '2rem'
@@ -281,7 +281,7 @@ const ServicesPage = () => {
                 <div className="scope-list-v6">
                   <h4 style={{
                     fontSize: '0.8rem',
-                    color: '#ffd200',
+                    color: '#F7E59D',
                     marginBottom: '1.5rem',
                     letterSpacing: '0.1em',
                     fontFamily: 'var(--font-body-clean)',

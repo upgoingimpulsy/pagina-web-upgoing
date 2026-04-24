@@ -1,5 +1,5 @@
 :root {
-  --accent-gold: #ffd200;
+  --accent-gold: #F7E59D;
   --accent-sky: #00c2ff;
   --bg-base: #000000;
 }
@@ -46,15 +46,15 @@
 .pleex-bg {
   background-color: #000000;
   background-image: 
-    radial-gradient(ellipse at 20% 30%, rgba(255, 210, 0, 0.15), transparent 55%),
-    radial-gradient(ellipse at 80% 70%, rgba(255, 210, 0, 0.08), transparent 60%);
+    radial-gradient(ellipse at 20% 30%, rgba(247, 229, 157, 0.15), transparent 55%),
+    radial-gradient(ellipse at 80% 70%, rgba(247, 229, 157, 0.08), transparent 60%);
 }
 
 .bts-bg {
   background-color: #041E42;
   background-image: 
-    radial-gradient(ellipse at 70% 25%, rgba(255, 210, 0, 0.15), transparent 55%),
-    radial-gradient(ellipse at 15% 75%, rgba(255, 210, 0, 0.08), transparent 60%);
+    radial-gradient(ellipse at 70% 25%, rgba(247, 229, 157, 0.15), transparent 55%),
+    radial-gradient(ellipse at 15% 75%, rgba(247, 229, 157, 0.08), transparent 60%);
   opacity: 0;
 }
 

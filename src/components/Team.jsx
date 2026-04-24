@@ -171,7 +171,7 @@ const Team = () => {
           line-height: 1;
           border-radius: 50%;
           transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-          box-shadow: 0 10px 30px rgba(255, 210, 0, 0.25);
+          box-shadow: 0 10px 30px rgba(247, 229, 157, 0.25);
         }
 
         .editorial-card:hover .editorial-plus {
@@ -392,8 +392,8 @@ const Team = () => {
           text-transform: uppercase;
           color: rgba(255, 255, 255, 0.8);
           padding: 0.45rem 0.9rem;
-          border: 1px solid rgba(255, 210, 0, 0.3);
-          background: rgba(255, 210, 0, 0.05);
+          border: 1px solid rgba(247, 229, 157, 0.3);
+          background: rgba(247, 229, 157, 0.05);
           border-radius: 999px;
         }
 

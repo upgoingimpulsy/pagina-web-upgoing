@@ -6,7 +6,7 @@ html {
 
 :root {
   --primary: #020817;
-  --accent-yellow: #FFD700;
+  --accent-yellow: #F7E59D;
   --accent-sky: #00C2FF;
   --text-muted: #8E9AAF;
   --white: #FFFFFF;
@@ -159,7 +159,7 @@ h4, h5, h6 {
   z-index: 10;
   opacity: 1;
   border-color: var(--accent-yellow);
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6), 0 0 30px rgba(255, 215, 0, 0.2);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6), 0 0 30px rgba(247, 229, 157, 0.2);
 }
 
 .service-card-v6.next {
@@ -247,22 +247,6 @@ h4, h5, h6 {
   transition: var(--transition);
 }
 
-.service-content h3 {
-  font-family: var(--font-body-premium);
-  font-size: 1.8rem;
-  color: white;
-  margin-bottom: 0.5rem;
-  letter-spacing: 2px;
-}
-
-.service-content p {
-  font-family: var(--font-body-clean);
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.7);
-  margin-bottom: 1.5rem;
-  line-height: 1.4;
-}
-
 .service-card-v6:hover .features-list-v6,
 .service-card-v6.active .features-list-v6 {
   opacity: 1;
@@ -302,7 +286,7 @@ h4, h5, h6 {
   background: var(--accent-yellow);
   color: black;
   border-color: transparent;
-  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(247, 229, 157, 0.3);
 }
 
 /* Button Highlighting */
@@ -323,7 +307,7 @@ h4, h5, h6 {
 
 .btn-yellow:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(255, 215, 0, 0.4);
+  box-shadow: 0 15px 40px rgba(247, 229, 157, 0.4);
 }
 
 /* HUD elements */

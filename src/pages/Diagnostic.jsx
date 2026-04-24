@@ -332,7 +332,7 @@ const Diagnostic = () => {
                 .loader-ring {
                     width: 80px;
                     height: 80px;
-                    border: 4px solid rgba(255, 194, 50, 0.1);
+                    border: 4px solid rgba(247, 229, 157, 0.1);
                     border-top: 4px solid var(--accent-yellow);
                     border-radius: 50%;
                     margin: 0 auto 2rem;

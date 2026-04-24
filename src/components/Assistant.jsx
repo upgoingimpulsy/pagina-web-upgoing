@@ -240,9 +240,9 @@ const Assistant = () => {
           text-transform: uppercase;
           cursor: pointer;
           transition: all 0.3s ease;
-          box-shadow: 0 0 30px rgba(255, 210, 0, 0.3);
+          box-shadow: 0 0 30px rgba(247, 229, 157, 0.3);
         }
-        .popup-btn-large:hover { background: white; transform: translateY(-5px); box-shadow: 0 10px 40px rgba(255, 210, 0, 0.5); }
+        .popup-btn-large:hover { background: white; transform: translateY(-5px); box-shadow: 0 10px 40px rgba(247, 229, 157, 0.5); }
 
         .light-beam-directional {
           position: fixed;
@@ -287,7 +287,7 @@ const Assistant = () => {
         .highlight-flash {
           animation: pill-flash-intense 1s infinite alternate;
           border-color: var(--accent-yellow) !important;
-          box-shadow: 0 0 50px rgba(255, 210, 0, 0.6);
+          box-shadow: 0 0 50px rgba(247, 229, 157, 0.6);
         }
 
         @keyframes pill-flash-intense {

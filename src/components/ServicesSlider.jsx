@@ -65,8 +65,8 @@ const ServicesSlider = ({ services, activeVideo, setActiveVideo }) => {
           font-size: 0.7rem;
           font-weight: 900;
           letter-spacing: 0.4em;
-          color: #ffd200;
-          border: 1px solid rgba(255,210,0,0.3);
+          color: #F7E59D;
+          border: 1px solid rgba(247,229,157,0.3);
           padding: 0.5rem 1.5rem;
           margin-bottom: 1.5rem;
           text-transform: uppercase;
@@ -113,8 +113,8 @@ const ServicesSlider = ({ services, activeVideo, setActiveVideo }) => {
           transform: translateX(0) rotateY(0) translateZ(150px) scale(1.1);
           opacity: 1;
           z-index: 10;
-          border-color: rgba(255, 210, 0, 0.5);
-          box-shadow: 0 50px 100px rgba(0,0,0,0.8), 0 0 50px rgba(255, 210, 0, 0.1);
+          border-color: rgba(247, 229, 157, 0.5);
+          box-shadow: 0 50px 100px rgba(0,0,0,0.8), 0 0 50px rgba(247, 229, 157, 0.1);
         }
 
         .rotation-card.next {
@@ -157,7 +157,7 @@ const ServicesSlider = ({ services, activeVideo, setActiveVideo }) => {
         .card-id {
           font-size: 0.8rem;
           font-weight: 900;
-          color: #ffd200;
+          color: #F7E59D;
           margin-bottom: 0.5rem;
           display: block;
         }
@@ -199,7 +199,7 @@ const ServicesSlider = ({ services, activeVideo, setActiveVideo }) => {
       <div className="container">
         <div className="slider-title-center reveal">
           <span className="hud-tag">Portfolio</span>
-          <h2>Modelos de <br/> <span style={{ color: '#ffd200' }}>Inversión</span></h2>
+          <h2>Modelos de <br/> <span style={{ color: '#F7E59D' }}>Inversión</span></h2>
         </div>
 
         <div 
@@ -229,7 +229,7 @@ const ServicesSlider = ({ services, activeVideo, setActiveVideo }) => {
                   <span className="card-id">S-0{i+1}</span>
                   <h3 className="card-title">{s.title}</h3>
                   <div className="card-badge">
-                    <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#ffd200' }}></span>
+                    <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#F7E59D' }}></span>
                     {activeCard === i ? 'HACER CLICK PARA AMPLIAR' : 'VER MÓDULO'}
                   </div>
                 </div>

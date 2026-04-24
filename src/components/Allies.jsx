@@ -62,13 +62,13 @@ const Allies = () => {
         }
         .flip-back {
           background: #041E41;
-          border: 1px solid rgba(255,210,0,0.3);
+          border: 1px solid rgba(247,229,157,0.3);
           transform: rotateY(180deg);
         }
         .flip-icon {
           font-size: 2.2rem;
           color: var(--accent-yellow);
-          filter: drop-shadow(0 0 12px rgba(255, 210, 0, 0.2));
+          filter: drop-shadow(0 0 12px rgba(247, 229, 157, 0.2));
           display: flex;
           align-items: center;
           justify-content: center;
