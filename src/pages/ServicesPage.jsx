@@ -87,20 +87,9 @@ const ServicesPage = () => {
           background: radial-gradient(circle at 50% 0%, rgba(255, 210, 0, 0.1), transparent 70%);
         }
 
-        .services-hero-section h1 {
-          font-family: var(--font-title-primary);
+        .services-hero-section .brutal-title {
           font-size: clamp(3rem, 10vw, 7rem);
-          text-transform: uppercase;
-          line-height: 0.9;
           margin-bottom: 2rem;
-          letter-spacing: -0.05em;
-        }
-
-        .services-hero-section .accent {
-          font-family: var(--font-title-secondary);
-          color: #ffd200;
-          -webkit-text-stroke: 1px #ffd200;
-          -webkit-text-fill-color: transparent;
         }
 
         /* ── Split Layout Sections ── */
@@ -275,7 +264,7 @@ const ServicesPage = () => {
             display: 'inline-block',
             marginBottom: '2rem'
           }}>Service Portfolio</span>
-          <h1>Especialistas en <br/> <span className="accent">EE.UU.</span></h1>
+          <h1 className="brutal-title">Especialistas en <br/> <span className="text-gradient">EE.UU.</span></h1>
         </div>
       </section>
 
