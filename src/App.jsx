@@ -8,7 +8,6 @@ import ModulesExperience from './components/ModulesExperience/ModulesExperience'
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import ServicesSlider from './components/ServicesSlider';
-import Strategy from './components/Strategy';
 import Allies from './components/Allies';
 import Team from './components/Team';
 import Footer from './components/Footer';
@@ -62,7 +61,6 @@ const Home = () => {
         setActiveVideo={setActiveVideo} 
       />
       <ModulesExperience />
-      <Strategy />
       <Allies />
       <Team />
       <Footer />
