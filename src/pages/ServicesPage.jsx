@@ -11,8 +11,6 @@ const ServicesPage = () => {
       id: "01",
       tag: "EMPRENDEDORES",
       title: "Servicio Estándar",
-      price: "$650",
-      priceNote: "Texas y Florida",
       description: "Este plan, dirigido a emprendedores y empresarios locales (que ya están en EEUU) o extranjeros en etapa inicial que solo requieren constituir una LLC que les permita alcanzar un objetivo o propósito especifico.",
       video: "/IMG_5689.mp4",
       scopeTitle: "ALCANCE:",
@@ -27,8 +25,6 @@ const ServicesPage = () => {
       id: "02",
       tag: "EMPRESARIOS",
       title: "Servicio Premium",
-      price: "$1.350",
-      priceNote: "USD - Incluye State Fee Florida",
       description: "Dirigido empresarios y emprendedores extranjeros que buscan expandir la operación de su empresa a Estados Unidos o establecer un negocio desde cero, protegiendo su patrimonio y generando ingresos en dólares.",
       video: "/IMG_5687.mp4",
       scopeTitle: "ESTRUCTURACIÓN LEGAL Y TRIBUTARIA:",
@@ -46,8 +42,6 @@ const ServicesPage = () => {
       id: "03",
       tag: "INVERSIONISTAS",
       title: "Plan Empresario Elite",
-      price: "$6.500",
-      priceNote: "PLEEX Implementation",
       description: "Dirigido a empresarios y emprendedores que buscan expandir la operación de sus negocios a través de la implementación del PLEEX (Plan Estratégico de Expansión) personalizado según sus objetivos específicos.",
       video: "/IMG_5685.mp4",
       scopeTitle: "SERVICIOS PREMIUM + SIGUIENTE ALCANCE:",
@@ -264,7 +258,6 @@ const ServicesPage = () => {
           .detail-visual { order: 1; margin-bottom: 2rem; }
           .feature-bullets { grid-template-columns: 1fr; }
           .services-hero-section { padding: 120px 0 60px; }
-          .price-tag-v6 span[style*="font-size: 2.5rem"] { font-size: 1.8rem !important; }
         }
       `}</style>
 
@@ -296,18 +289,6 @@ const ServicesPage = () => {
                 <h2 className="service-name">{s.title}</h2>
                 <p className="service-para">{s.description}</p>
                 
-                <div className="price-tag-v6" style={{ 
-                  margin: '2rem 0', 
-                  padding: '1.5rem', 
-                  background: 'rgba(255,210,0,0.05)', 
-                  borderLeft: '4px solid #ffd200',
-                  borderRadius: '0 20px 20px 0'
-                }}>
-                  <span style={{ display: 'block', fontSize: '0.7rem', color: '#ffd200', fontWeight: 900, marginBottom: '0.5rem' }}>INVERSIÓN</span>
-                  <span style={{ fontSize: '2.5rem', fontWeight: 900, color: 'white', fontFamily: 'var(--font-title-primary)' }}>{s.price}</span>
-                  <span style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.5)', marginLeft: '1rem' }}>{s.priceNote}</span>
-                </div>
-
                 <div className="scope-list-v6">
                   <h4 style={{ 
                     fontSize: '0.8rem', 
