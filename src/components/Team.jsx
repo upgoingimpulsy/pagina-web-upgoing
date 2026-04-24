@@ -6,7 +6,7 @@ const teamMembers = [
     slug: 'felipe',
     name: 'Felipe Hernández',
     role: 'CEO & Founder',
-    photo: '/felipe-ceo.jpg',
+    photo: '/kling_20260425_作品_pon_el_fon_1418_1.png',
     tagline: 'Arquitecto de la expansión internacional.',
     bio: [
       'Visionario y fundador de Up Going. Lidera la estrategia de expansión empresarial a Estados Unidos, acompañando a emprendedores y empresarios en la construcción de estructuras legales y tributarias sólidas.',
@@ -32,7 +32,7 @@ const teamMembers = [
     slug: 'paulina',
     name: 'Paulina Hernández',
     role: 'Socia Fundadora',
-    photo: '/paulina.jpg',
+    photo: '/kling_20260425_作品_Replace_pe_1893_1.png',
     tagline: 'Visión estratégica y liderazgo fundacional.',
     bio: [
       'Cofundadora de Up Going, aporta la visión estratégica y el liderazgo que dan forma a la identidad de la firma.',

@@ -16,9 +16,7 @@ const Hero = () => {
       </div>
 
       <div className="felipe-layer-v6 reveal">
-        <video autoPlay loop muted playsInline className="felipe-video-v6">
-          <source src="/felipe.mp4" type="video/mp4" />
-        </video>
+        <img src="/kling_20260425_作品_pon_el_fon_1418_1.png" alt="Felipe CEO" className="felipe-video-v6" />
         <div className="video-scanline"></div>
       </div>
 

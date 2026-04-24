@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { InstagramLogo, WhatsappLogo, LinkedinLogo } from '@phosphor-icons/react';
 
 const Footer = () => {
   return (
@@ -10,9 +11,15 @@ const Footer = () => {
             <img src="/upgoing.png" alt="UP GOING Logo" className="footer-logo" />
             <p className="footer-tagline">Tu futuro corporativo empieza aquí.</p>
             <div className="footer-socials">
-              <a href="#" className="social-icon">IG</a>
-              <a href="#" className="social-icon">WA</a>
-              <a href="#" className="social-icon">LI</a>
+              <a href="https://www.instagram.com/upgoing.usa?igsh=eDNzcnk3OWZzazNm" target="_blank" rel="noopener noreferrer" className="social-icon">
+                <InstagramLogo size={20} weight="bold" />
+              </a>
+              <a href="https://wa.me/17542994505" target="_blank" rel="noopener noreferrer" className="social-icon">
+                <WhatsappLogo size={20} weight="bold" />
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer" className="social-icon">
+                <LinkedinLogo size={20} weight="bold" />
+              </a>
             </div>
           </div>
 
