@@ -136,7 +136,7 @@ const ServicesPage = () => {
         }
 
         .service-para {
-          font-family: var(--font-body-premium);
+          font-family: var(--font-body-clean);
           font-size: 1.1rem;
           color: rgba(255,255,255,0.7);
           line-height: 1.7;
@@ -279,12 +279,14 @@ const ServicesPage = () => {
                 <p className="service-para">{s.description}</p>
                 
                 <div className="scope-list-v6">
-                  <h4 style={{ 
-                    fontSize: '0.8rem', 
-                    color: '#ffd200', 
-                    marginBottom: '1.5rem', 
+                  <h4 style={{
+                    fontSize: '0.8rem',
+                    color: '#ffd200',
+                    marginBottom: '1.5rem',
                     letterSpacing: '0.1em',
-                    fontFamily: 'var(--font-body-premium)'
+                    fontFamily: 'var(--font-body-clean)',
+                    fontWeight: 800,
+                    textTransform: 'uppercase'
                   }}>{s.scopeTitle}</h4>
                   <ul className="feature-bullets">
                     {s.scope.map((item, idx) => (
