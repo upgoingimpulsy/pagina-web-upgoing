@@ -254,19 +254,22 @@ const ServicesSlider = ({ services, activeVideo, setActiveVideo }) => {
         }}>
           <div className="video-modal-content" onClick={e => e.stopPropagation()} style={{
             position: 'relative',
-            width: '100%',
-            maxWidth: '1200px',
-            background: '#080808',
-            borderRadius: '40px',
+            width: 'auto',
+            maxWidth: '95vw',
+            maxHeight: '92vh',
+            background: 'transparent',
+            borderRadius: '20px',
             overflow: 'hidden',
-            boxShadow: '0 50px 100px rgba(0,0,0,0.9)'
+            boxShadow: '0 50px 100px rgba(0,0,0,0.9)',
+            display: 'inline-block',
+            lineHeight: 0
           }}>
             <button className="modal-close" onClick={() => setActiveVideo(null)} style={{
               position: 'absolute',
-              top: '2rem',
-              right: '2rem',
-              background: 'rgba(255,255,255,0.1)',
-              border: 'none',
+              top: '1rem',
+              right: '1rem',
+              background: 'rgba(0,0,0,0.5)',
+              border: '1px solid rgba(255,255,255,0.15)',
               color: 'white',
               width: '44px',
               height: '44px',
@@ -276,9 +279,10 @@ const ServicesSlider = ({ services, activeVideo, setActiveVideo }) => {
               zIndex: 10,
               display: 'flex',
               alignItems: 'center',
-              justifyContent: 'center'
+              justifyContent: 'center',
+              backdropFilter: 'blur(10px)'
             }}>&times;</button>
-            <video autoPlay controls style={{ width: '100%', maxHeight: '80vh', background: '#000' }}>
+            <video autoPlay controls style={{ maxHeight: '92vh', maxWidth: '95vw', width: 'auto', height: 'auto', display: 'block' }}>
               <source src={activeVideo} type={getVideoType(activeVideo)} />
             </video>
           </div>

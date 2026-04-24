@@ -355,26 +355,34 @@ const ServicesPage = () => {
         }}>
           <div className="video-modal-content" onClick={e => e.stopPropagation()} style={{
             position: 'relative',
-            width: '100%',
-            maxWidth: '1200px',
-            background: '#000',
-            borderRadius: '40px',
-            overflow: 'hidden'
+            width: 'auto',
+            maxWidth: '95vw',
+            maxHeight: '92vh',
+            background: 'transparent',
+            borderRadius: '20px',
+            overflow: 'hidden',
+            display: 'inline-block',
+            lineHeight: 0
           }}>
             <button className="modal-close" onClick={() => setActiveVideo(null)} style={{
               position: 'absolute',
-              top: '2rem',
-              right: '2rem',
-              background: 'rgba(255,255,255,0.1)',
-              border: 'none',
+              top: '1rem',
+              right: '1rem',
+              background: 'rgba(0,0,0,0.5)',
+              border: '1px solid rgba(255,255,255,0.15)',
               color: 'white',
-              width: '40px',
-              height: '40px',
+              width: '44px',
+              height: '44px',
               borderRadius: '50%',
+              fontSize: '1.5rem',
               cursor: 'pointer',
-              zIndex: 10
+              zIndex: 10,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              backdropFilter: 'blur(10px)'
             }}>&times;</button>
-            <video autoPlay controls style={{ width: '100%', maxHeight: '80vh', background: '#000' }}>
+            <video autoPlay controls style={{ maxHeight: '92vh', maxWidth: '95vw', width: 'auto', height: 'auto', display: 'block' }}>
               <source src={activeVideo} type="video/mp4" />
             </video>
           </div>
