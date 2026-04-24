@@ -45,7 +45,7 @@ const teamMembers = [
     slug: 'juliana',
     name: 'Juliana Nieto',
     role: 'Abogada Senior',
-    photo: '/juliana.jpg',
+    photo: '/kling_20260425_作品_Image1_bac_1928_1.png',
     tagline: 'Rigor legal para operar con tranquilidad.',
     bio: [
       'Lidera el frente legal de Up Going, asegurando que cada estructura cumpla con la normativa estatal y federal de los Estados Unidos.',
