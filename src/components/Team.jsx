@@ -53,6 +53,19 @@ const teamMembers = [
     ],
     skills: ['Derecho Corporativo USA', 'Compliance', 'Estructuración Tributaria'],
   },
+  {
+    id: '05',
+    slug: 'julian',
+    name: 'Julián',
+    role: 'Comunicación Publicitaria',
+    photo: '/upgoing.png',
+    tagline: 'Conectando con clientes de forma clara y efectiva.',
+    bio: [
+      'Profesional en comunicación publicitaria responsable de la gestión de redes sociales, y la producción y edición de contenido audiovisual.',
+      'Su labor fortalece la comunicación y presencia digital de la empresa, conectándola con sus clientes y mejorando la confianza, el conocimiento y la experiencia en el proceso.'
+    ],
+    skills: ['Comunicación', 'Redes Sociales', 'Contenido Audiovisual'],
+  },
 ];
 
 const Team = () => {
