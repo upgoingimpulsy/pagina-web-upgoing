@@ -141,6 +141,14 @@ const ServicesSlider = ({ services, activeVideo, setActiveVideo }) => {
           object-fit: cover;
           object-position: center 20%;
           filter: brightness(0.6);
+          pointer-events: none;
+        }
+        
+        .card-video-wrap video::-webkit-media-controls,
+        .card-video-wrap video::-webkit-media-controls-start-playback-button,
+        .card-video-wrap video::-webkit-media-controls-panel {
+          display: none !important;
+          -webkit-appearance: none !important;
         }
 
         .card-overlay {
