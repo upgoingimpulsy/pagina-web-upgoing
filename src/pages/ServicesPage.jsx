@@ -194,41 +194,6 @@ const ServicesPage = () => {
           transform: scale(1.05);
         }
 
-        .play-trigger {
-          position: absolute;
-          inset: 0;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background: rgba(0,0,0,0.2);
-          opacity: 0;
-          transition: all 0.3s ease;
-          cursor: pointer;
-          z-index: 5;
-        }
-
-        .detail-visual:hover .play-trigger {
-          opacity: 1;
-        }
-
-        .play-btn {
-          width: 80px;
-          height: 80px;
-          background: #F7E59D;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: #000;
-          font-size: 1.5rem;
-          transform: scale(0.8);
-          transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-
-        .detail-visual:hover .play-btn {
-          transform: scale(1);
-        }
-
         .reveal {
           opacity: 0;
           transform: translateY(40px);
@@ -238,6 +203,14 @@ const ServicesPage = () => {
         .reveal.is-visible {
           opacity: 1;
           transform: translateY(0);
+        }
+
+        /* Hide native play buttons on iOS */
+        video::-webkit-media-controls,
+        video::-webkit-media-controls-start-playback-button,
+        video::-webkit-media-controls-panel {
+          display: none !important;
+          -webkit-appearance: none !important;
         }
 
         @media (max-width: 992px) {
@@ -300,9 +273,6 @@ const ServicesPage = () => {
                 <video autoPlay loop muted playsInline style={{ width: '100%', borderRadius: '30px', boxShadow: '0 30px 60px rgba(0,0,0,0.5)' }}>
                   <source src={s.video} type="video/mp4" />
                 </video>
-                <div className="play-trigger">
-                  <div className="play-btn">▶</div>
-                </div>
               </div>
             </div>
           </section>
