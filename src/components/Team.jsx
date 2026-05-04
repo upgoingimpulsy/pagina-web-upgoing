@@ -44,21 +44,8 @@ const teamMembers = [
     id: '04',
     slug: 'juliana',
     name: 'Juliana Nieto',
-    role: 'Abogada Senior',
-    photo: '/kling_20260425_作品_Image1_bac_1928_1.png',
-    tagline: 'Rigor legal para operar con tranquilidad.',
-    bio: [
-      'Lidera el frente legal de Up Going, asegurando que cada estructura cumpla con la normativa estatal y federal de los Estados Unidos.',
-      'Juliana asesora en constitución de LLC y C-Corps, contratos, compliance tributario y protección patrimonial, aportando el rigor jurídico que nuestros clientes necesitan para operar con tranquilidad.',
-    ],
-    skills: ['Derecho Corporativo USA', 'Compliance', 'Estructuración Tributaria'],
-  },
-  {
-    id: '05',
-    slug: 'julian',
-    name: 'Julián',
     role: 'Comunicación Publicitaria',
-    photo: '/upgoing.png',
+    photo: '/kling_20260425_作品_Image1_bac_1928_1.png',
     tagline: 'Conectando con clientes de forma clara y efectiva.',
     bio: [
       'Profesional en comunicación publicitaria responsable de la gestión de redes sociales, y la producción y edición de contenido audiovisual.',
