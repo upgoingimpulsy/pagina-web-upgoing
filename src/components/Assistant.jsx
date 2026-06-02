@@ -30,13 +30,13 @@ const Assistant = () => {
     general: {
       who: "UP GOING es una firma de Consultoría de Negocios Internacionales con sede principal en Miami y operaciones en Colombia, especializada en la expansión de empresas latinas al mercado estadounidense.",
       promesa: "Diseñamos y ejecutamos la hoja de ruta integral para que empresarios e inversionistas lleven su operación a EE.UU. con éxito, protegiendo su patrimonio y generando ingresos en la moneda más estable del mundo (Dólares).",
-      metodologia: "Nuestra metodología exclusiva combina el **PLEEX** (Plan Estratégico de Expansión) para la fase de estructuración, y el **BTS** (Business To Success) para la fase de tracción y escalabilidad en suelo americano.",
+      metodologia: "Nuestra metodología exclusiva combina el **PLEEX** (Plan Estratégico de Expansión) para la fase de estructuración, y el **B2S** (Business To Success) para la fase de tracción y escalabilidad en suelo americano.",
       alianza: "Nuestra red de aliados es un ecosistema completo que incluye expertos en Marketing e IA, Abogados de Inmigración y Corporativos, Planeación Tributaria, Real Estate y Logística Internacional. No solo te damos una visa, te damos un negocio que funciona."
     },
     proceso: {
       paso1: "Diagnóstico Inicial: Analizamos la viabilidad de tu modelo de negocio para el mercado USA.",
       paso2: "Estructuración PLEEX: Diseño de la arquitectura legal, tributaria y operativa.",
-      paso3: "Fase BTS: Aterrizaje operativo (Landing) y búsqueda de rentabilidad (Success)."
+      paso3: "Fase B2S: Aterrizaje operativo (Landing) y búsqueda de rentabilidad (Success)."
     },
     servicios: {
       estandar: "**Plan Estándar**: Enfocado en la formalización básica. Registro de LLC, EIN y estructura inicial para operar.",

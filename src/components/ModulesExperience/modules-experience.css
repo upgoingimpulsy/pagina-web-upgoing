@@ -50,7 +50,7 @@
     radial-gradient(ellipse at 80% 70%, rgba(247, 229, 157, 0.08), transparent 60%);
 }
 
-.bts-bg {
+.B2S-bg {
   background-color: #041E42;
   background-image: 
     radial-gradient(ellipse at 70% 25%, rgba(247, 229, 157, 0.15), transparent 55%),
@@ -68,7 +68,7 @@
   will-change: transform, opacity;
 }
 
-.stage-panel[data-panel="bts"] {
+.stage-panel[data-panel="B2S"] {
   transform: translate3d(-115%, 0, 0);
 }
 
@@ -158,7 +158,7 @@
 
 /* ── Reveal escalonado ── */
 .stagger,
-.stagger-bts {
+.stagger-B2S {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
@@ -166,7 +166,7 @@
 }
 
 .stagger.is-visible,
-.stagger-bts.is-visible {
+.stagger-B2S.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -174,9 +174,9 @@
 
 @media (prefers-reduced-motion: reduce) {
   .stagger,
-  .stagger-bts,
+  .stagger-B2S,
   .stagger.is-visible,
-  .stagger-bts.is-visible {
+  .stagger-B2S.is-visible {
     opacity: 1;
     transform: none;
     transition: none;

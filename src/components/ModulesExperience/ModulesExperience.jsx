@@ -7,12 +7,12 @@ export default function ModulesExperience() {
   return (
     <div className="experience-wrap">
 
-      {/* STAGE: PLEEX sale a la derecha, BTS entra desde la izquierda, luego scroll normal */}
+      {/* STAGE: PLEEX sale a la derecha, B2S entra desde la izquierda, luego scroll normal */}
       <div className="stage" data-stage>
         <div className="stage-pin">
           {/* Fondos con crossfade */}
           <div className="stage-bg pleex-bg" data-bg="pleex"></div>
-          <div className="stage-bg bts-bg" data-bg="bts"></div>
+          <div className="stage-bg B2S-bg" data-bg="B2S"></div>
 
           {/* ── PANEL 01: PLEEX ── */}
           <div className="stage-panel" data-panel="pleex">
@@ -36,29 +36,29 @@ export default function ModulesExperience() {
             </div>
           </div>
 
-          {/* ── PANEL 02: BTS ── */}
-          <div className="stage-panel" data-panel="bts">
+          {/* ── PANEL 02: B2S ── */}
+          <div className="stage-panel" data-panel="B2S">
             <div className="container module-content" style={{ display: 'flex', justifyContent: 'center' }}>
-              <div className="method-box glass-v6 bts-style" style={{ margin: '0 auto', textAlign: 'center' }}>
+              <div className="method-box glass-v6 B2S-style" style={{ margin: '0 auto', textAlign: 'center' }}>
                 <div className="method-header">
-                  <span className="method-tag stagger-bts" style={{ color: 'var(--accent-gold)' }}>
+                  <span className="method-tag stagger-B2S" style={{ color: 'var(--accent-gold)' }}>
                     FASE DE TRACCIÓN
                   </span>
-                  <h2 className="method-title stagger-bts">BTS: Business To Success</h2>
+                  <h2 className="method-title stagger-B2S">B2S: Business To Success</h2>
                 </div>
-                <p className="method-desc stagger-bts">
+                <p className="method-desc stagger-B2S">
                   La fase de aterrizaje y escalabilidad real. Nos aseguramos de que
                   su negocio no solo exista, sino que prospere con tracción comercial
                   y operativa en el mercado americano.
                 </p>
                 <div className="steps-row" style={{ justifyContent: 'center' }}>
-                  <div className="step-item stagger-bts">
+                  <div className="step-item stagger-B2S">
                     <span style={{ color: 'var(--accent-gold)' }}>04</span> Landing
                   </div>
-                  <div className="step-item stagger-bts">
+                  <div className="step-item stagger-B2S">
                     <span style={{ color: 'var(--accent-gold)' }}>05</span> Operation
                   </div>
-                  <div className="step-item stagger-bts">
+                  <div className="step-item stagger-B2S">
                     <span style={{ color: 'var(--accent-gold)' }}>06</span> Success
                   </div>
                 </div>
