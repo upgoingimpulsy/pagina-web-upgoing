@@ -9,8 +9,7 @@ const teamMembers = [
     photo: '/kling_20260425_作品_pon_el_fon_1418_1.png',
     tagline: 'Arquitecto de la expansión internacional.',
     bio: [
-      'Visionario y fundador de Up Going. Lidera la estrategia de expansión empresarial a Estados Unidos, acompañando a emprendedores y empresarios en la construcción de estructuras legales y tributarias sólidas.',
-      'Con amplia trayectoria en el ecosistema de negocios internacionales, Felipe combina experiencia operativa, visión de mercado y red de aliados para convertir ideas en operaciones reales en EE.UU.',
+      'Empresario, experto en estrategia de expansión empresarial, con más de 5 años de experiencia asesorando holdings familiares, estructuracion y desarrollo de negocios con enfoque en proyectos de inversión en USA  y Colombia.',
     ],
     skills: ['Estrategia Internacional', 'Estructuración Corporativa', 'Expansión a EE.UU.'],
   },
@@ -22,8 +21,7 @@ const teamMembers = [
     photo: '/carla-ops.jpg',
     tagline: 'Precisión operativa al servicio del cliente.',
     bio: [
-      'Responsable de que cada proceso de apertura y estructuración avance con precisión, velocidad y estándares de calidad internacionales.',
-      'Carla coordina los equipos internos y los aliados en EE.UU. para garantizar tiempos de entrega, cumplimiento regulatorio y una experiencia impecable para cada cliente.',
+      'Abogada, con más 15 años de experiencia, especialista en derecho administrativo, experta en derecho corporativo y migración  empresarial   Ha impactado más de 270 empresarios a través de procesos de expansión y gestión de visas de inversión, con éxito impecable.',
     ],
     skills: ['Gestión de Proyectos', 'Operaciones Transfronterizas', 'Client Experience'],
   },
@@ -31,12 +29,11 @@ const teamMembers = [
     id: '03',
     slug: 'paulina',
     name: 'Paulina Hernández',
-    role: 'Socia Fundadora',
+    role: 'Directora de Estrategia Comercial y Marketing Digital',
     photo: '/kling_20260425_作品_Replace_pe_1893_1.png',
     tagline: 'Visión estratégica y liderazgo fundacional.',
     bio: [
-      'Cofundadora de Up Going, aporta la visión estratégica y el liderazgo que dan forma a la identidad de la firma.',
-      'Su rol combina dirección de marca, desarrollo de alianzas y una mirada integral del negocio que asegura que cada decisión esté alineada con los objetivos de largo plazo de los clientes.',
+      'Paulina lidera la estrategia comercial y de marketing digital de la empresa, diseñando e implementando acciones orientadas al crecimiento, posicionamiento y generación de oportunidades de negocio. Su rol integra la planificación comercial, la comunicación estratégica y la gestión de la presencia digital, asegurando que cada iniciativa esté alineada con los objetivos de la organización.',
     ],
     skills: ['Dirección Estratégica', 'Alianzas', 'Desarrollo de Marca'],
   },
@@ -256,7 +253,7 @@ const Team = () => {
           inset: 0;
           background: rgba(0, 0, 0, 0.85);
           backdrop-filter: blur(25px);
-          z-index: 9999;
+          z-index: 99999;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -398,7 +395,7 @@ const Team = () => {
         }
 
         .member-modal-close {
-          position: absolute;
+          position: fixed;
           top: 1.25rem;
           right: 1.25rem;
           width: 42px;
@@ -413,7 +410,7 @@ const Team = () => {
           font-size: 1.2rem;
           cursor: pointer;
           border-radius: 50%;
-          z-index: 5;
+          z-index: 999999;
           transition: all 0.3s ease;
         }
 
