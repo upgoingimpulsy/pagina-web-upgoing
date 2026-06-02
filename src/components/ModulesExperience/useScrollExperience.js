@@ -8,9 +8,9 @@ export function useScrollExperience() {
     if (!stage) return;
 
     const pleexPanel = stage.querySelector('[data-panel="pleex"]');
-    const btsPanel = stage.querySelector('[data-panel="bts"]');
+    const btsPanel = stage.querySelector('[data-panel="B2S"]');
     const pleexBg = stage.querySelector('[data-bg="pleex"]');
-    const btsBg = stage.querySelector('[data-bg="bts"]');
+    const btsBg = stage.querySelector('[data-bg="B2S"]');
 
 
     const easeInOutCubic = (t) =>
@@ -66,7 +66,7 @@ export function useScrollExperience() {
       }
       if (!btsRevealed && t > 0.4) {
         btsRevealed = true;
-        triggerStagger(btsPanel, 'stagger-bts');
+        triggerStagger(btsPanel, 'stagger-B2S');
       }
 
     };
