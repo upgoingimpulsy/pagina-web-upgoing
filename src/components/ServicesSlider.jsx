@@ -229,9 +229,9 @@ const ServicesSlider = ({ services, activeVideo, setActiveVideo }) => {
                 onClick={() => handleCardClick(i)}
               >
                 <div className="card-video-wrap">
-                  <video autoPlay loop muted playsInline>
+                  {s.video ? <video autoPlay loop muted playsInline>
                     <source src={s.video} type={getVideoType(s.video)} />
-                  </video>
+                  </video> : <div style={{width: "100%", height: "100%", background: "#111"}}></div>}
                 </div>
                 <div className="card-overlay">
                   <span className="card-id">S-0{i+1}</span>

@@ -21,7 +21,7 @@ const teamMembers = [
     photo: '/carla-ops.jpg',
     tagline: 'Implementación y estrategia de ejecución.',
     bio: [
-      'Empresaria, con más de 15 años de experiencia como abogada, especialista en derecho administrativo, experta en derecho corporativo y estrategia de expansión. Ha impactado más de 270 empresarios a través de su acompañamiento en procesos de expansión empresarial y visas de inversión, con éxito impecable.',
+      'Empresaria, con más de 15 años de experiencia como abogada, especialista en derecho administrativo (Colombia), experta en derecho corporativo y estrategia de expansión. Ha impactado más de 270 empresarios a través de su acompañamiento en procesos de expansión empresarial y visas de inversión, con éxito impecable.',
     ],
     skills: ['Gestión de Proyectos', 'Operaciones Transfronterizas', 'Client Experience'],
   },

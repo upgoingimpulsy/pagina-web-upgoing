@@ -43,7 +43,7 @@ const ServicesPage = () => {
       tag: "INVERSIONISTAS",
       title: "Plan Empresario Elite",
       description: "Dirigido a empresarios y emprendedores que buscan expandir la operación de sus negocios a través de la implementación del PLEEX (Plan Estratégico de Expansión) personalizado según sus objetivos específicos.",
-      video: "/IMG_5685.mp4",
+      video: null,
       scopeTitle: "SERVICIOS PREMIUM + SIGUIENTE ALCANCE:",
       scope: [
         "Solicitud de ITIN (número de identificación tributario personal)",
@@ -270,9 +270,9 @@ const ServicesPage = () => {
               </div>
               
               <div className="detail-visual reveal" onClick={() => setActiveVideo(s.video)}>
-                <video autoPlay loop muted playsInline style={{ width: '100%', borderRadius: '30px', boxShadow: '0 30px 60px rgba(0,0,0,0.5)' }}>
+                {s.video ? <video autoPlay loop muted playsInline style={{ width: '100%', borderRadius: '30px', boxShadow: '0 30px 60px rgba(0,0,0,0.5)' }}>
                   <source src={s.video} type="video/mp4" />
-                </video>
+                </video> : <div style={{width: "100%", height: "100%", background: "#111", borderRadius: "30px"}}></div>}
               </div>
             </div>
           </section>
