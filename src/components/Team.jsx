@@ -17,7 +17,7 @@ const teamMembers = [
     id: '02',
     slug: 'carla',
     name: 'Carla Zapata',
-    role: 'Directora de Operaciones',
+    role: 'Director of Operations',
     photo: '/carla-ops.jpg',
     tagline: 'Implementación y estrategia de ejecución.',
     bio: [
