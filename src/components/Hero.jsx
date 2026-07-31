@@ -43,7 +43,7 @@ const Hero = () => {
             Acompañamiento integral de la mano de profesionales expertos para empresarios que facturan +$15k USD/mes. Sin errores costosos y con resultados reales.
           </p>
           <div className="hero-actions-v6 reveal" style={{ transitionDelay: '0.5s' }}>
-            <Link to="/diagnostico" className="btn-yellow">INICIAR DIAGNÓSTICO</Link>
+            {/* <Link to="/diagnostico" className="btn-yellow">INICIAR DIAGNÓSTICO</Link> */}
             <Link to="/servicios" className="btn-outline-v6">VER PLANES</Link>
           </div>
         </div>
