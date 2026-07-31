@@ -429,7 +429,7 @@ const Team = () => {
           }
           .member-modal {
             grid-template-columns: 1fr;
-            max-height: 92vh;
+            max-height: 92vh; overflow-y: auto;
           }
           .member-modal-photo {
             min-height: 420px;
@@ -455,7 +455,7 @@ const Team = () => {
           .editorial-plus { width: 36px; height: 36px; font-size: 1.2rem; }
           .editorial-info { padding-top: 1rem; margin-top: 1rem; }
           .member-modal-overlay { padding: 0; }
-          .member-modal { max-height: 100vh; height: 100vh; border-radius: 0; }
+          .member-modal { max-height: 100vh; height: 100vh; border-radius: 0; overflow-y: auto; }
           .member-modal-body { padding: 2rem 1.5rem; }
           .member-modal-photo { min-height: 380px; }
           .member-modal-img { padding: 0.75rem; }
