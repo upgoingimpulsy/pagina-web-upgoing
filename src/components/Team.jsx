@@ -19,7 +19,7 @@ const teamMembers = [
     name: 'Carla Zapata',
     role: 'Directora de Operaciones',
     photo: '/carla-ops.jpg',
-    tagline: 'Precisión operativa al servicio del cliente.',
+    tagline: 'Implementación y estrategia de ejecución.',
     bio: [
       'Abogada, con más 15 años de experiencia, especialista en derecho administrativo, experta en derecho corporativo y migración  empresarial   Ha impactado más de 270 empresarios a través de procesos de expansión y gestión de visas de inversión, con éxito impecable.',
     ],
