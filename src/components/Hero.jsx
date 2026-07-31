@@ -40,7 +40,7 @@ const Hero = () => {
             <span className="text-gradient">EMPRESARIAL A EE.UU</span>
           </h1>
           <p className="hero-p-v6 reveal" style={{ transitionDelay: '0.3s' }}>
-            Ayudamos a inversionistas y empresarios a internacionalizar sus empresas y expandir sus operaciones a Estados Unidos, protegiendo su patrimonio y generando ingresos en dólares.
+            Acompañamiento integral de la mano de profesionales expertos para empresarios que facturan +$15k USD/mes. Sin errores costosos y con resultados reales.
           </p>
           <div className="hero-actions-v6 reveal" style={{ transitionDelay: '0.5s' }}>
             <Link to="/diagnostico" className="btn-yellow">INICIAR DIAGNÓSTICO</Link>
