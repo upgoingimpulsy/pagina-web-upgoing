@@ -207,7 +207,7 @@ const ServicesSlider = ({ services, activeVideo, setActiveVideo }) => {
       <div className="container">
         <div className="slider-title-center reveal">
           <span className="hud-tag">Portfolio</span>
-          <h2>Modelos de <br/> <span style={{ color: '#F7E59D' }}>Inversión</span></h2>
+          <h2>Estructura, estrategia y un <br/> <span style={{ color: '#F7E59D' }}>plan de expansión a tu medida</span></h2>
         </div>
 
         <div 
