@@ -167,11 +167,38 @@ const Assistant = () => {
           </div>
 
           <div className="chat-scroller" ref={scrollRef}>
-            {messages.map((m, i) => (
-              <div key={i} className={`chat-bubble ${m.role}`}>
-                <div className="bubble-content">{m.content}</div>
-              </div>
-            ))}
+            {messages.map((m, i) => {
+              const renderMessageText = (text) => {
+                if (!text) return null;
+                const urlRegex = /(https?:\/\/[^\s]+)/g;
+                const parts = text.split(urlRegex);
+                return parts.map((part, index) => {
+                  if (part.match(urlRegex)) {
+                    let url = part;
+                    let trailing = '';
+                    if (/[.,;?)]$/.test(url)) {
+                      trailing = url.slice(-1);
+                      url = url.slice(0, -1);
+                    }
+                    return (
+                      <React.Fragment key={index}>
+                        <a href={url} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-yellow)', textDecoration: 'underline', wordBreak: 'break-all' }}>
+                          {url}
+                        </a>
+                        {trailing}
+                      </React.Fragment>
+                    );
+                  }
+                  return part;
+                });
+              };
+              
+              return (
+                <div key={i} className={`chat-bubble ${m.role}`}>
+                  <div className="bubble-content">{renderMessageText(m.content)}</div>
+                </div>
+              );
+            })}
 
             {showLeadForm && (
               <div className="chat-bubble ai">
