@@ -350,6 +350,8 @@ const Assistant = () => {
         .chat-action input { flex: 1; background: transparent; border-bottom: 1px solid var(--glass-border); border-left: none; border-right: none; border-top: none; padding: 1rem 0; color: white; outline: none; }
         .chat-action button { background: var(--accent-yellow); color: black; border: none; padding: 0 2rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.1em; cursor: pointer; transition: var(--transition); }
         .close-x, .close-popup { background: transparent; border: none; color: white; cursor: pointer; }
+        .close-x { font-size: 2rem; opacity: 0.6; transition: all 0.3s ease; padding: 0.5rem; line-height: 1; }
+        .close-x:hover { opacity: 1; color: var(--accent-yellow); transform: scale(1.1); }
         .close-popup { position: absolute; top: 1rem; right: 1rem; font-size: 1.5rem; opacity: 0.5; }
         .close-popup:hover { opacity: 1; }
         @media (max-width: 768px) {
