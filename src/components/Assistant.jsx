@@ -14,6 +14,17 @@ const Assistant = () => {
   const [showWelcomePopup, setShowWelcomePopup] = useState(false);
   const [showBeam, setShowBeam] = useState(false);
   const scrollRef = useRef(null);
+  const wrapperRef = useRef(null);
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (isOpen && wrapperRef.current && !wrapperRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [isOpen]);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -131,7 +142,7 @@ const Assistant = () => {
   };
 
   return (
-    <div className={`assistant-wrapper ${isOpen ? 'active' : ''}`}>
+    <div className={`assistant-wrapper ${isOpen ? 'active' : ''}`} ref={wrapperRef}>
       {!isOpen && (
         <>
           {showWelcomePopup && (
@@ -170,24 +181,45 @@ const Assistant = () => {
             {messages.map((m, i) => {
               const renderMessageText = (text) => {
                 if (!text) return null;
-                const urlRegex = /(https?:\/\/[^\s]+)/g;
-                const parts = text.split(urlRegex);
-                return parts.map((part, index) => {
-                  if (part.match(urlRegex)) {
-                    let url = part;
-                    let trailing = '';
-                    if (/[.,;?)]$/.test(url)) {
-                      trailing = url.slice(-1);
-                      url = url.slice(0, -1);
-                    }
-                    return (
-                      <React.Fragment key={index}>
-                        <a href={url} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-yellow)', textDecoration: 'underline', wordBreak: 'break-all' }}>
-                          {url}
-                        </a>
-                        {trailing}
-                      </React.Fragment>
-                    );
+                const mdRegex = /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g;
+                let parts = [];
+                let lastIndex = 0;
+                let match;
+                
+                while ((match = mdRegex.exec(text)) !== null) {
+                  if (match.index > lastIndex) parts.push(text.substring(lastIndex, match.index));
+                  parts.push(
+                    <a key={match.index} href={match[2]} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-yellow)', textDecoration: 'underline' }}>
+                      {match[1]}
+                    </a>
+                  );
+                  lastIndex = mdRegex.lastIndex;
+                }
+                if (lastIndex < text.length) parts.push(text.substring(lastIndex));
+                
+                return parts.map((part, idx) => {
+                  if (typeof part === 'string') {
+                    const urlRegex = /(https?:\/\/[^\s]+)/g;
+                    const subParts = part.split(urlRegex);
+                    return subParts.map((subPart, subIdx) => {
+                      if (subPart.match(urlRegex)) {
+                        let url = subPart;
+                        let trailing = '';
+                        if (/[.,;?)]$/.test(url)) {
+                          trailing = url.slice(-1);
+                          url = url.slice(0, -1);
+                        }
+                        return (
+                          <React.Fragment key={`${idx}-${subIdx}`}>
+                            <a href={url} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-yellow)', textDecoration: 'underline', wordBreak: 'break-all' }}>
+                              {url}
+                            </a>
+                            {trailing}
+                          </React.Fragment>
+                        );
+                      }
+                      return subPart;
+                    });
                   }
                   return part;
                 });
