@@ -18,7 +18,7 @@ const ServicesPage = () => {
         "Apertura LLC constitución o registro estatal",
         "Artículos de incorporación del Estado",
         "Solicitud de EIN (número de identificación tributaria para el negocio)",
-        "Certificado de impuestos sobre las ventas (si aplicara)"
+        "Acuerdo operativo"
       ]
     },
     {
