@@ -62,12 +62,12 @@ const Footer = () => {
     <>
     <style jsx>{`
       .legal-modal-overlay { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.85); backdrop-filter: blur(10px); z-index: 99999; display: flex; justify-content: center; align-items: center; padding: 2rem; }
-      .legal-modal-content { background: #050505; border: 1px solid rgba(255,255,255,0.1); border-top: 3px solid var(--accent-yellow); width: 100%; max-width: 800px; max-height: 85vh; border-radius: 8px; padding: 3rem; position: relative; box-shadow: 0 20px 50px rgba(0,0,0,0.5); display: flex; flex-direction: column; }
+      .legal-modal-content { font-family: system-ui, -apple-system, sans-serif; text-transform: none; text-align: left; background: #050505; border: 1px solid rgba(255,255,255,0.1); border-top: 3px solid var(--accent-yellow); width: 100%; max-width: 800px; max-height: 85vh; border-radius: 8px; padding: 3rem; position: relative; box-shadow: 0 20px 50px rgba(0,0,0,0.5); display: flex; flex-direction: column; }
       .legal-modal-close { position: absolute; top: 1.5rem; right: 1.5rem; background: transparent; border: none; color: white; font-size: 2rem; cursor: pointer; opacity: 0.5; transition: 0.3s; line-height: 1; }
       .legal-modal-close:hover { opacity: 1; color: var(--accent-yellow); }
       .legal-text-scroll { overflow-y: auto; padding-right: 1rem; flex: 1; }
-      .legal-text-scroll p { font-size: 0.95rem; line-height: 1.6; color: rgba(255,255,255,0.8); margin-bottom: 1.2rem; }
-      .legal-text-scroll h5 { color: white; font-size: 1.1rem; margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem; }
+      .legal-text-scroll p { font-family: system-ui, -apple-system, sans-serif; font-weight: normal; letter-spacing: normal; text-transform: none; font-size: 0.95rem; line-height: 1.6; color: rgba(255,255,255,0.8); margin-bottom: 1.2rem; }
+      .legal-text-scroll h5 { font-family: system-ui, -apple-system, sans-serif; font-weight: bold; letter-spacing: normal; text-transform: uppercase; color: white; font-size: 1.1rem; margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem; }
       
       .legal-link-btn { background: transparent; border: none; color: rgba(255,255,255,0.6); font-family: var(--font-body); font-size: 0.8rem; cursor: pointer; text-align: left; padding: 0; transition: color 0.3s; margin-bottom: 0.8rem; }
       .legal-link-btn:hover { color: var(--accent-yellow); }
@@ -130,3 +130,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
