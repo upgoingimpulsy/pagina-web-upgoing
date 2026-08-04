@@ -117,7 +117,7 @@ const Footer = () => {
         <div className="footer-copy">
           <div className="footer-legal-disclaimer" style={{ fontSize: '0.65rem', color: 'rgba(255, 255, 255, 0.4)', marginTop: '2rem', lineHeight: '1.5', textAlign: 'center', maxWidth: '800px', margin: '2rem auto 0' }}>
             <p style={{ marginBottom: '0.5rem' }}>UP GOING es un servicio de consultoría y asistencia empresarial para la estructuración y expansión de negocios. No garantizamos la aprobación por parte de terceros (bancos, entidades gubernamentales, embajadas, etc.).</p>
-            <p style={{ marginBottom: '0.5rem' }}>UP GOING LLC — sociedad de responsabilidad limitada registrada en el Estado de Florida, EE.UU. - 100 SE 2nd Street suite 2000, Miami FL 33131.</p>
+            <p style={{ marginBottom: '0.5rem' }}>UpGoing International LLC — Sociedad de Responsabilidad Limitada registrada en el Estado de Florida, EE.UU. N.º de registro L25000496410</p>
             <p>upgoing@upgoingus.com</p>
           </div>
           <p style={{ marginTop: '2rem' }}>&copy; 2026 UP GOING. International Business Booster. All rights reserved.</p>
