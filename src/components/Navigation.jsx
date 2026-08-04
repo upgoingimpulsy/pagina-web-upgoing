@@ -54,7 +54,7 @@ const Navigation = () => {
             <Link to="/#nosotros" className="nav-item">Nosotros</Link>
           )}
 
-          <a href="#contacto" className="btn-yellow nav-cta">AGENDAR SESIÓN</a>
+          <a href="https://api.leadconnectorhq.com/widget/booking/Wb6qCcEN1D7gGTRvolzY" target="_blank" rel="noopener noreferrer" className="btn-yellow nav-cta">AGENDAR SESIÓN</a>
         </div>
       </div>
     </nav>
