@@ -238,6 +238,7 @@ const ServicesPage = () => {
             marginBottom: '2rem'
           }}>Service Portfolio</span>
           <h1 className="brutal-title">Especialistas en <br/> <span className="text-gradient">EE.UU.</span></h1>
+          <p style={{ marginTop: "2rem", maxWidth: "800px", margin: "2rem auto 0", fontSize: "1.2rem", color: "rgba(255,255,255,0.8)", lineHeight: "1.8", fontFamily: "system-ui, -apple-system, sans-serif", padding: "0 1rem" }}>Construimos estructuras empresariales sólidas, con visión estratégica, enfocadas en la protección de activos y alineadas con tus objetivos, desde que decides operar a través de tu primera LLC, hasta que escalas tus operaciones y diversificas tus inversiones en EEUU.</p>
         </div>
       </section>
 
