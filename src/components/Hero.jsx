@@ -40,7 +40,7 @@ const Hero = () => {
             <span className="text-gradient">EMPRESARIAL A EE.UU</span>
           </h1>
           <p className="hero-p-v6 reveal" style={{ transitionDelay: '0.3s' }}>
-            Acompañamiento integral, Estructura Corporativa optimizada, Estrategia y Plan de Expansión personalizado para empresarios que facturan +/mes. Sin errores y con resultados reales.
+            Acompaamiento integral, Estructura Corporativa optimizada, Estrategia y Plan de Expansin personalizado para empresarios que facturan +/mes. Sin errores y con resultados reales.
           </p>
           <div className="hero-actions-v6 reveal" style={{ transitionDelay: '0.5s' }}>
             {/* <Link to="/diagnostico" className="btn-yellow">INICIAR DIAGNÃ“STICO</Link> */}
