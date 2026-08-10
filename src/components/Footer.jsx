@@ -116,7 +116,7 @@ const Footer = () => {
 
         <div className="footer-copy">
           <div className="footer-legal-disclaimer" style={{ fontSize: '0.65rem', color: 'rgba(255, 255, 255, 0.4)', marginTop: '2rem', lineHeight: '1.5', textAlign: 'center', maxWidth: '800px', margin: '2rem auto 0' }}>
-            <p style={{ marginBottom: '0.5rem' }}>UP GOING es un servicio de consultoría y asistencia empresarial para la estructuración y expansión de negocios. No garantizamos la aprobación por parte de terceros (bancos, entidades gubernamentales, embajadas, etc.).</p>
+            <p style={{ marginBottom: '0.5rem' }}></p>
             <p style={{ marginBottom: '0.5rem' }}>UpGoing International LLC — Sociedad de Responsabilidad Limitada registrada en el Estado de Florida, EE.UU. N.º de registro L25000496410</p>
             <p>upgoing@upgoingus.com</p>
           </div>
