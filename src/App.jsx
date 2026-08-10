@@ -33,7 +33,7 @@ const Home = () => {
     {
       id: "03",
       title: "Plan Empresario Elite",
-      video: null,
+      video: "/IMG_5685.mp4",
       desc: "Expansión estratégica avanzada a través de la implementación del PLEEX."
     }
   ];
