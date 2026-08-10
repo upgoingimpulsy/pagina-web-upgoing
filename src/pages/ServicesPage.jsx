@@ -43,7 +43,7 @@ const ServicesPage = () => {
       tag: "INVERSIONISTAS",
       title: "Plan Empresario Elite",
       description: "Dirigido a empresarios y emprendedores que buscan expandir la operación de sus negocios a través de la implementación del PLEEX (Plan Estratégico de Expansión) personalizado según sus objetivos específicos.",
-      video: null,
+      video: "/IMG_5685.mp4",
       scopeTitle: "SERVICIOS PREMIUM + SIGUIENTE ALCANCE:",
       scope: [
         "Solicitud de ITIN (número de identificación tributario personal)",
