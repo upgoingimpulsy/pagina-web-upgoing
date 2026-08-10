@@ -5,7 +5,7 @@ const Assistant = () => {
   const [messages, setMessages] = useState([
     {
       role: 'ai',
-      content: 'Bienvenido a **UP GOING**. Soy tu consultor de expansión internacional. ¿Buscas agendar una llamada de diagnóstico gratuita o conocer nuestros planes corporativos?'
+      content: 'Bienvenido a **UP GOING**. Soy su consultor de expansión internacional. ¿Buscas agendar una llamada de diagnóstico gratuita o conocer nuestros planes corporativos?'
     }
   ]);
   const [input, setInput] = useState('');
@@ -42,10 +42,10 @@ const Assistant = () => {
       who: "UP GOING es una firma de Consultoría de Negocios Internacionales con sede principal en Miami y operaciones en Colombia, especializada en la expansión de empresas latinas al mercado estadounidense.",
       promesa: "Diseñamos y ejecutamos la hoja de ruta integral para que empresarios e inversionistas lleven su operación a EE.UU. con éxito, protegiendo su patrimonio y generando ingresos en la moneda más estable del mundo (Dólares) 👉 de forma inteligente y segura.",
       metodologia: "Nuestra metodología exclusiva combina el **PLEEX** (Plan Estratégico de Expansión) para la fase de estructuración, y el **B2S** (Business To Success) para la fase de tracción y escalabilidad en suelo americano.",
-      alianza: "Nuestra red de aliados es un ecosistema completo que incluye expertos en Marketing e IA, Abogados de Inmigración y Corporativos, Planeación Tributaria, Real Estate y Logística Internacional. No solo te damos una visa, te damos un negocio que funciona."
+      alianza: "Nuestra red de aliados es un ecosistema completo que incluye expertos en Marketing e IA, Abogados de Inmigración y Corporativos, Planeación Tributaria, Real Estate y Logística Internacional. No solo le damos una visa, le damos un negocio que funciona."
     },
     proceso: {
-      paso1: "Diagnóstico Inicial: Analizamos la viabilidad de tu modelo de negocio para el mercado USA.",
+      paso1: "Diagnóstico Inicial: Analizamos la viabilidad de su modelo de negocio para el mercado USA.",
       paso2: "Estructuración PLEEX: Diseño de la arquitectura legal, tributaria y operativa.",
       paso3: "Fase B2S: Aterrizaje operativo (Landing) y búsqueda de rentabilidad (Success)."
     },
@@ -63,7 +63,7 @@ const Assistant = () => {
 
     if (q.includes('agendar') || q.includes('sesion') || q.includes('llamada') || q.includes('contacto') || q.includes('whatsapp')) {
       setShowLeadForm(true);
-      return "¡Excelente! Puedes agendar directamente en nuestro calendario arriba, o si prefieres, déjanos tus datos aquí mismo y un asesor de ventas te escribirá por WhatsApp de inmediato.";
+      return "¡Excelente! Puedes agendar directamente en nuestro calendario arriba, o si prefieres, déjenos sus datos aquí mismo y un asesor de ventas le escribirá por WhatsApp de inmediato.";
     }
 
     if (q.includes('quienes') || q.includes('empresa') || q.includes('quiénes')) return `${KNOWLEDGE_BASE.general.who} ${KNOWLEDGE_BASE.general.promesa}`;
@@ -74,7 +74,7 @@ const Assistant = () => {
     if (q.includes('requisito') || q.includes('factura') || q.includes('reto')) return KNOWLEDGE_BASE.requisitos;
     if (q.includes('paso') || q.includes('proceso') || q.includes('diagnostico')) return `Nuestro proceso consta de: 1. ${KNOWLEDGE_BASE.proceso.paso1} 2. ${KNOWLEDGE_BASE.proceso.paso2} 3. ${KNOWLEDGE_BASE.proceso.paso3}`;
 
-    return "Como impulsadora internacional, mi prioridad es tu expansión. ¿Te gustaría conocer los detalles de un plan específico o agendar una llamada gratuita?";
+    return "Como impulsadora internacional, mi prioridad es su expansión. ¿Le gustaría conocer los detalles de un plan específico o agendar una llamada gratuita?";
   };
 
   const handleSend = async () => {
@@ -134,7 +134,7 @@ const Assistant = () => {
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData);
 
-    setMessages(prev => [...prev, { role: 'ai', content: `Gracias **${data.name}**. Solicitud recibida. Un asesor de UP GOING te contactará al **${data.phone}** vía WhatsApp en breve para coordinar tu sesión.` }]);
+    setMessages(prev => [...prev, { role: 'ai', content: `Gracias **${data.name}**. Solicitud recibida. Un asesor de UP GOING le contactará al **${data.phone}** vía WhatsApp en breve para coordinar su sesión.` }]);
     setShowLeadForm(false);
 
     // Simulate Trigger (Triggering WhatsApp Follow-up via n8n)
@@ -150,7 +150,7 @@ const Assistant = () => {
               <button className="close-popup" onClick={() => setShowWelcomePopup(false)}>×</button>
               <div className="popup-badge">EXPERT AI ONSITE</div>
               <h3>¿LISTO PARA ESCALAR A USA?</h3>
-              <p>Detectamos un perfil con alto potencial de expansión. ¿Hablamos sobre tu hoja de ruta?</p>
+              <p>Detectamos un perfil con alto potencial de expansión. ¿Hablamos sobre su hoja de ruta?</p>
               <button className="popup-btn-large" onClick={() => { setIsOpen(true); setShowWelcomePopup(false); setShowBeam(false); }}>INICIAR CONSULTORÍA</button>
             </div>
           )}
@@ -236,7 +236,7 @@ const Assistant = () => {
               <div className="chat-bubble ai">
                 <form className="lead-form-v5" onSubmit={handleLeadSubmit}>
                   <h4>Captura de Lead Prioritario</h4>
-                  <input name="name" placeholder="Tu nombre" required />
+                  <input name="name" placeholder="Su nombre" required />
                   <input name="phone" placeholder="WhatsApp" required />
                   <button type="submit" className="btn-yellow">Contactarme ahora</button>
                 </form>
@@ -255,7 +255,7 @@ const Assistant = () => {
           <div className="chat-action">
             <input
               type="text"
-              placeholder="Escribe tu mensaje..."
+              placeholder="Escriba su mensaje..."
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && handleSend()}

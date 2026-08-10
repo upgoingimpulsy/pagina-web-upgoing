@@ -30,7 +30,7 @@ const Footer = () => {
             <h5>Español</h5>
             <p>En UpGoing nos comprometemos a proporcionar el mejor servicio posible con información precisa, orientación experta y personalizada, a través de nuestros planes estratégicos de Expansión; sin embargo, dada la naturaleza consultiva de nuestros servicios, es importante destacar que, nuestra obligación es de medio y no de resultado, por lo tanto, no podemos garantizar resultados específicos.</p>
             <p>Nuestras acciones están encaminadas a la estructuración de un plan estratégico ajustado al perfil de cada empresario o inversionista. El éxito de este proceso depende en gran medida de las decisiones, acciones desplegadas, compromiso, capacidad de inversión y responsabilidad directa de cada empresario.</p>
-            <p>Por lo tanto, UpGoing no asume ninguna responsabilidad por resultados que no cumplan con las expectativas individuales o que se vean afectados por circunstancias o decisiones ajenas a nuestro control, como aprobación de créditos, licencias, visas, cuentas, contratos, rentabilidad, resultados comerciales específicos, entre otros. Excepto la garantía de estructuración corporativa, por la cual si respondemos (si no obtienes tu empresa legalmente registrada, te devolvemos tu dinero).</p>
+            <p>Por lo tanto, UpGoing no asume ninguna responsabilidad por resultados que no cumplan con las expectativas individuales o que se vean afectados por circunstancias o decisiones ajenas a nuestro control, como aprobación de créditos, licencias, visas, cuentas, contratos, rentabilidad, resultados comerciales específicos, entre otros. Excepto la garantía de estructuración corporativa, por la cual si respondemos (si no obtiene su empresa legalmente registrada, le devolvemos su dinero).</p>
             <p>UPGOING presta servicios de consultoría, acompañamiento, estructuración y desarrollo de negocios, planificación y estructura de expansión empresarial; no actúa como broker, CPA, firma de abogados, autoridad gubernamental, contratista general ni aseguradora. Las recomendaciones se basan en la información disponible y no sustituyen asesoría profesional regulada.</p>
             <p>Agradecemos su comprensión y confianza en nuestro equipo. Estamos a su disposición para acompañarlos en cada paso del proceso, no obstante el resultado exitoso, dependerá en última instancia de sus propias decisiones y nivel de compromiso.</p>
 
@@ -78,7 +78,7 @@ const Footer = () => {
         <div className="footer-grid">
           <div className="footer-brand-v6">
             <img src="/upgoing.png" alt="UP GOING Logo" className="footer-logo" />
-            <p className="footer-tagline">Tu futuro corporativo empieza aquí.</p>
+            <p className="footer-tagline">Su futuro corporativo empieza aquí.</p>
             <div className="footer-socials">
               <a href="https://www.instagram.com/upgoing.usa?igsh=eDNzcnk3OWZzazNm" target="_blank" rel="noopener noreferrer" className="social-icon">
                 <InstagramLogo size={20} weight="bold" />

@@ -18,7 +18,7 @@ const Diagnostic = () => {
     const questions = [
         {
             title: '¿Cuánto paga una clienta en promedio por visita?',
-            sub: 'El valor promedio de un servicio en tu centro estético.',
+            sub: 'El valor promedio de un servicio en su centro estético.',
             key: 'ticket',
             prefix: '$',
             placeholder: '80.000'
@@ -161,7 +161,7 @@ const Diagnostic = () => {
                 {screen === 'loading' && (
                     <div className="loading-screen">
                         <div className="loader-ring"></div>
-                        <h2 className="brutal-title" style={{ fontSize: '2rem' }}>ANALIZANDO TU NEGOCIO...</h2>
+                        <h2 className="brutal-title" style={{ fontSize: '2rem' }}>ANALIZANDO SU NEGOCIO...</h2>
                         <p>Calculando impacto financiero y operativo.</p>
                     </div>
                 )}
@@ -187,7 +187,7 @@ const Diagnostic = () => {
 
                         <div className="res-advice glass-v6" style={{ marginTop: '2rem', padding: '1.5rem', borderColor: 'var(--accent-yellow)' }}>
                             <p style={{ margin: 0, fontSize: '0.9rem' }}>
-                                💡 <strong>Aviso:</strong> Con solo recuperar <strong>2 citas al mes</strong>, tu sistema UP GOING se paga solo y empieza a generar utilidad neta.
+                                💡 <strong>Aviso:</strong> Con solo recuperar <strong>2 citas al mes</strong>, su sistema UP GOING se paga solo y empieza a generar utilidad neta.
                             </p>
                         </div>
 

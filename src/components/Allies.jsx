@@ -93,7 +93,7 @@ const Allies = () => {
         <div className="allies-info">
           <span className="hud-tag">Red Estratégica</span>
           <h2 className="title-v5">Alianzas de <br /><span className="accent">Alto Nivel</span></h2>
-          <p>Nuestra infraestructura incluye a los mejores expertos en estructuras tributarias, marketing e inversión inmobiliaria en los Estados Unidos.</p>
+          <p>Nuestra infraestructura incluye el acceso a profesionales expertos en diferentes áreas de operación en EEUU.</p>
         </div>
 
         <div className="allies-grid">
