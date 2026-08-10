@@ -23,10 +23,7 @@ export default function ModulesExperience() {
                   <h2 className="method-title stagger">PLEEX: PLAN ESTRATÉGICO DE EXPANSIÓN</h2>
                 </div>
                 <p className="method-desc stagger">
-                  No solo estructuramos tu empresa, implementamos su hoja de ruta
-                  personalizada de expansión y asistimos en la operación y desarrollo
-                  de sus proyectos en EEUU.
-                </p>
+                  No solo estructuramos su empresa, implementamos su hoja de ruta personalizada y asistimos en la operación y desarrollo de sus proyectos en EEUU.</p>
                 <div className="steps-row" style={{ justifyContent: 'center' }}>
                   <div className="step-item stagger"><span>01</span> Diagnóstico</div>
                   <div className="step-item stagger"><span>02</span> Contrato</div>
